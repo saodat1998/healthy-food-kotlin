@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PP.uz</string>
+    <string name="app_description">Take a picture and see if you are eating right food!</string>
+    <string name="app_motto">Eat right, Be bright!</string>
+    <string name="delicious_food">Healthy Food, go ahead taste it!)</string>
+    <string name="not_delicious_food">Not Healthy Food, try to avoid!(</string>
+    <string name="not_food">It is not Food!</string>
+    <string name="error_taking_picture">Error taking picture</string>
+    <string name="picture_not_taken">Picture Not Taken!</string>
+    <string name="take_picture">TAKE PICTURE</string>
+    <string name="permission_message">I need permission to take pictures :(</string>
+    <string name="OK">OK</string>
+    <string name="error">Error</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_about_app">ScrollingActivity</string>
+    <string name="large_text">
+        "The mobile app for recognizing healthy food from not healthy ones, which can help people look after their daily nutrition routines. \n\n
+Users should only take a picture of particular food and the app can automatically distinguish the food type and alerts if the particular picture does not contain any food. \n\n
+The PP.uz app can be developed in the near future by adding new functionalities to audio managing, so that it could effectively help to recognize food for sight limited or even blind people."
+
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

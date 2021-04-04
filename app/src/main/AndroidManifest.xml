@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fighting.ppuz">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Uses Features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.fighting.ppuz.AboutAppActivity"
+            android:label="@string/title_activity_about_app"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <!-- Splash Activity -->
+        <activity android:name="com.fighting.ppuz.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".HomeActivity"-->
+<!--            android:label="@string/title_activity_home"></activity>-->
+        <!-- Main Activity -->
+        <activity android:parentActivityName="com.fighting.ppuz.AboutAppActivity" android:name="com.fighting.ppuz.MainActivity" />
+        <!-- Firebase MLKit -->
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="label" />
+    </application>
+
+</manifest>
